@@ -14,7 +14,7 @@ async function consultarDatos(documentNum) {
   const result = {};
 
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: "new",
     args: ["--no-sandbox", "--disable-dev-shm-usage"],
   });
 
